@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         val news = findViewById<Button>(R.id.btn_news)
+        val weather = findViewById<Button>(R.id.btnWeather)
 
         news.setOnClickListener{
             val intent = Intent(this, MainActivity2::class.java)
@@ -44,7 +45,11 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        weather.setOnClickListener{
+            val intent = Intent(this, MainActivity3::class.java)
+            startActivity(intent)
 
+        }
 
 
 
