@@ -4,30 +4,46 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:padding="8dp">
 
-    <!-- Title TextView -->
-    <TextView
-        android:id="@+id/textViewTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+    <!-- ImageView for Article Image -->
+    <ImageView
+        android:id="@+id/imageViewArticle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" />
 
-    <!-- Description TextView -->
-    <TextView
-        android:id="@+id/textViewDescription"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textSize="16sp" />
+        android:layout_weight="1"
+        android:orientation="vertical">
 
-    <!-- Published Date TextView -->
-    <TextView
-        android:id="@+id/textViewPublishedAt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="14sp" />
+        <!-- Title TextView -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Description TextView -->
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+
+        <!-- Published Date TextView -->
+        <TextView
+            android:id="@+id/textViewPublishedAt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+    </LinearLayout>
 
     <!-- Add any other views you want to display for each news article item -->
 </LinearLayout>

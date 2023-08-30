@@ -33,7 +33,7 @@ class MainActivity3 : AppCompatActivity() {
 
     private fun onResponse(response: Weather) {
         Log.d("[news]", response.toString())
-        val dailyForecasts: ArrayList<DailyForecasts> = response.DailyForecasts
+        val dailyForecasts: List<DailyForecasts> = response.DailyForecasts
         val currentTemp = findViewById<TextView>(R.id.txtWeather)
         val temperatureValue = dailyForecasts[0].Temperature
 
