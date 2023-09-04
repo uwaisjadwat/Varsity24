@@ -1,4 +1,4 @@
-package com.example.varsity24.Weather
+package com.example.varsity24.Api
 
 import com.example.varsity24.Models.WeatherModel.Weather
 import io.reactivex.Observable

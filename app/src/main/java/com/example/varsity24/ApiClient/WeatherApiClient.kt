@@ -1,6 +1,6 @@
-package com.example.varsity24.Weather
+package com.example.varsity24.ApiClient
 
-import com.example.varsity24.News.NewsApi
+import com.example.varsity24.Api.WeatherApi
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory

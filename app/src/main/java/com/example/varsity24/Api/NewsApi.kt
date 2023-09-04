@@ -1,4 +1,4 @@
-package com.example.varsity24.News
+package com.example.varsity24.Api
 
 import io.reactivex.Observable
 import com.example.varsity24.Models.NewsModel.Articles

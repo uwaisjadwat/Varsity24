@@ -1,13 +1,13 @@
-package com.example.varsity24.News
+package com.example.varsity24.ApiClient
 
+import com.example.varsity24.Api.CurrencyApi
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
-object NewsApiClient {
-    private const val BASE_URL = "https://newsapi.org/v2/"
-
+object CurrencyApiClient {
+    private const val BASE_URL = "https://api.api-ninjas.com/v1/"
 
     private val client = OkHttpClient.Builder()
         .build()
@@ -19,14 +19,7 @@ object NewsApiClient {
         .client(client)
         .build()
 
-    fun buildService(): NewsApi {
-        return retrofit.create(NewsApi::class.java)
+    fun buildService(): CurrencyApi {
+        return retrofit.create(CurrencyApi::class.java)
     }
-
-
 }
-
-
-
-
-
